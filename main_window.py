@@ -307,6 +307,7 @@ class Ui_MainWindow(QtWidgets.QWidget):
             if networkException == True:
                 self.statusMessage.setText('인터넷 연결을 확인하고 \'새로고침\' 버튼을 눌러주세요.')
                 self.statusMessage.setStyleSheet('color:red')
+                return
             else:
                 self.statusMessage.setText('스크랩핑 완료')
                 self.statusMessage.setStyleSheet('color:black')
